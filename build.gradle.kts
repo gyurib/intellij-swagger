@@ -35,15 +35,15 @@ repositories {
 }
 
 dependencies {
-    implementation(platform("com.fasterxml.jackson:jackson-bom:2.17.2"))
-    implementation("commons-io:commons-io:2.16.1")
+    implementation(platform("com.fasterxml.jackson:jackson-bom:2.18.0"))
+    implementation("commons-io:commons-io:2.17.0")
     implementation("com.google.code.gson:gson:2.11.0")
-    implementation("com.google.guava:guava:33.3.0-jre")
+    implementation("com.google.guava:guava:33.3.1-jre")
     implementation("com.fasterxml.jackson.dataformat:jackson-dataformat-yaml")
     implementation("com.fasterxml.jackson.core:jackson-core")
     implementation("com.fasterxml.jackson.core:jackson-databind")
-    testImplementation("org.junit.jupiter:junit-jupiter-api:5.11.0")
-    testImplementation("org.mockito:mockito-core:5.12.0")
+    testImplementation("org.junit.jupiter:junit-jupiter-api:5.11.1")
+    testImplementation("org.mockito:mockito-core:5.14.1")
 }
 
 tasks {
