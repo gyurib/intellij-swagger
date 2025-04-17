@@ -8,10 +8,9 @@ buildscript {
 plugins {
     id("org.jetbrains.intellij") version "1.17.4"
     id("jacoco")
-    id("com.diffplug.spotless") version "7.0.1"
+    id("com.diffplug.spotless") version "7.0.2"
     id("idea")
     id("java")
-    id("com.github.ben-manes.versions") version "0.51.0"
 }
 
 intellij {
@@ -35,15 +34,15 @@ repositories {
 }
 
 dependencies {
-    implementation(platform("com.fasterxml.jackson:jackson-bom:2.18.2"))
+    implementation(platform("com.fasterxml.jackson:jackson-bom:2.18.3"))
     implementation("commons-io:commons-io:2.18.0")
-    implementation("com.google.code.gson:gson:2.11.0")
-    implementation("com.google.guava:guava:33.4.0-jre")
+    implementation("com.google.code.gson:gson:2.12.1")
+    implementation("com.google.guava:guava:33.4.6-jre")
     implementation("com.fasterxml.jackson.dataformat:jackson-dataformat-yaml")
     implementation("com.fasterxml.jackson.core:jackson-core")
     implementation("com.fasterxml.jackson.core:jackson-databind")
-    testImplementation("org.junit.jupiter:junit-jupiter-api:5.11.4")
-    testImplementation("org.mockito:mockito-core:5.15.2")
+    testImplementation("org.junit.jupiter:junit-jupiter-api:5.12.1")
+    testImplementation("org.mockito:mockito-core:5.16.1")
 }
 
 tasks {
